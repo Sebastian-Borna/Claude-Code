@@ -1,0 +1,28 @@
+{
+  "risk_map": [
+    {"location": "Strait of Hormuz", "lat": 26.56, "lon": 56.25, "risk_level": "critical", "risk_score": 92, "region": "Persian Gulf", "confidence": 0.95},
+    {"location": "Bab el-Mandeb", "lat": 12.58, "lon": 43.33, "risk_level": "high", "risk_score": 78, "region": "Red Sea", "confidence": 0.88},
+    {"location": "Strait of Malacca", "lat": 1.43, "lon": 103.5, "risk_level": "medium", "risk_score": 45, "region": "Southeast Asia", "confidence": 0.91},
+    {"location": "Gulf of Guinea", "lat": 4.0, "lon": 2.0, "risk_level": "high", "risk_score": 80, "region": "West Africa", "confidence": 0.82},
+    {"location": "Singapore Strait", "lat": 1.25, "lon": 103.8, "risk_level": "low", "risk_score": 20, "region": "Southeast Asia", "confidence": 0.94},
+    {"location": "Mozambique Channel", "lat": -15.5, "lon": 41.0, "risk_level": "medium", "risk_score": 38, "region": "East Africa", "confidence": 0.75},
+    {"location": "Suez Canal", "lat": 30.46, "lon": 32.35, "risk_level": "high", "risk_score": 65, "region": "Mediterranean", "confidence": 0.90}
+  ],
+  "incidents": [
+    {"id": "INC-001", "location": "Strait of Hormuz", "type": "drone_attack", "date": "2025-12-01", "severity": "critical", "lat": 26.6, "lon": 56.3},
+    {"id": "INC-002", "location": "Strait of Hormuz", "type": "missile_threat", "date": "2025-12-05", "severity": "major", "lat": 26.5, "lon": 56.2},
+    {"id": "INC-003", "location": "Bab el-Mandeb", "type": "piracy_attempt", "date": "2025-11-20", "severity": "moderate", "lat": 12.6, "lon": 43.4},
+    {"id": "INC-004", "location": "Gulf of Guinea", "type": "armed_robbery", "date": "2025-10-15", "severity": "major", "lat": 4.1, "lon": 2.1},
+    {"id": "INC-005", "location": "Strait of Malacca", "type": "collision_risk", "date": "2025-11-28", "severity": "minor", "lat": 1.4, "lon": 103.5},
+    {"id": "INC-006", "location": "Red Sea", "type": "houthi_missile", "date": "2025-12-10", "severity": "critical", "lat": 14.0, "lon": 42.5},
+    {"id": "INC-007", "location": "Suez Canal", "type": "grounding", "date": "2025-09-03", "severity": "moderate", "lat": 30.5, "lon": 32.4}
+  ],
+  "route_analysis": {
+    "best_route": "Suez Canal Route",
+    "routes": [
+      {"name": "Suez Canal Route", "risk_score": 70, "delay_risk": 60, "cost_impact": 40, "distance_nm": 6200},
+      {"name": "Cape of Good Hope Route", "risk_score": 30, "delay_risk": 50, "cost_impact": 70, "distance_nm": 11400},
+      {"name": "Northern Sea Route", "risk_score": 55, "delay_risk": 80, "cost_impact": 60, "distance_nm": 7500}
+    ]
+  }
+}
